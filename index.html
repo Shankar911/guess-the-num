@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Guess The Number</title>
+
+ <style>
+
+:root{
+  --bg: #EAEAEA;
+  --bg2: #D0D0D0;
+  --color: #101010;
+  --font-style: Courier;
+  --border-top: 110px solid var(--bg);
+}
+
+*{   
+  font-family: var(--font-style);
+}
+
+body{   
+  background-color: var(--bg);
+  font-family: var(--font-style);
+  display: flex;
+  justify-content: center;
+}
+
+.top-data{
+    color: var(--color);
+  font-family: var(--font-style);
+  display: flex;
+  align-content: center; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bg-div{
+  padding-bottom: 20px;
+  font-family: var(--font-style);
+  background-color: var(--bg2);
+  border-radius: 40px;
+  margin-top: 300px;
+  
+}
+
+.btn-10{
+  margin-left: 25%;
+}
+
+.all-btn{
+  margin-left: 25%;
+}
+
+.button{
+  background: linear-gradient(
+  30deg, #07B3FF, #0783FF
+  );   
+border: none;
+border-radius: 20px;
+height: 50px;
+width: 50px;
+font-size: 20px;
+
+}
+
+.button:hover{
+  background: #0088DC;
+}
+  </style>
+</head>
+<body>
+
+  <div class="bg-div">
+
+    <h1 class="top-data">
+      Guess The Number</h1>
+    
+    <script>
+ 
+  let rand =
+Math.floor(Math.random() * 10 + 1);
+
+let won = "🎖️ YOU WON 🎖️";
+
+let big_num = " Try Clicking Bigger Number ";
+
+let small_num = " Try Clicking Smaller Number ";
+
+//================================
+
+let numCheck1 = () => {
+  
+  if ( 1 == rand ){
+    alert(won);
+  }
+  else{
+    alert(big_num);
+  }
+ javascript:location.reload(true);
+}
+
+
+let numCheck2 = () => {
+  if ( 2 == rand ){
+    alert(won);
+  }
+  else if ( 2 < rand ) {
+    alert(big_num);
+  }
+  else{
+    alert(small_num)
+  }
+  
+ javascript:location.reload(true);
+}
+
+
+let numCheck3 = () => {
+  if ( 3 == rand ){
+    alert(won);
+  }
+  else if ( 3 < rand ) {
+    alert(big_num);
+  }
+  else{
+    alert(small_num)
+  }
+ javascript:location.reload(true);
+}
+
+
+let numCheck4 = () => {
+  if (4 == rand) {
+    alert(won)
+  }
+  else if (4 < rand) {
+    alert(big_num);
+  }
+  else {
+    alert(small_num)
+  }
+ javascript:location.reload(true);
+}
+
+let numCheck5 = () => {
+  if (5 == rand) {
+    alert(won)
+  }
+  else if (5 < rand) {
+    alert(big_num);
+  }
+  else {
+    alert(small_num)
+  }
+ javascript:location.reload(true);
+}
+
+
+let numCheck6 = () => {
+  if (6 == rand) {
+    alert(won)
+  }
+  else if (6 < rand) {
+    alert(big_num);
+  }
+  else {
+    alert(small_num)
+  }
+ javascript:location.reload(true);
+}
+
+let numCheck7 = () => {
+  if (7 == rand) {
+    alert(won)
+  }
+  else if (7 < rand) {
+    alert(big_num);
+  }
+  else {
+    alert(small_num)
+  }
+ javascript:location.reload(true);
+}
+
+ 
+let numCheck8 = () => {
+  if (8 == rand) {
+    alert(won)
+  }
+  else if (8 < rand) {
+    alert(big_num);
+  }
+  else {
+    alert(small_num)
+  }
+ javascript:location.reload(true);
+}
+
+ let numCheck9 = () => {
+  if (9 == rand) {
+    alert(won)
+  }
+  else if (9 < rand) {
+    alert(big_num);
+  }
+  else {
+    alert(small_num)
+  }
+  
+ javascript:location.reload(true);
+}
+
+ let numCheck10 = () => {
+   
+  if (10 == rand) {
+    alert(won)
+  }
+  else if (10 < rand) {
+    alert(big_num);
+  }
+  else {
+    alert(small_num)
+  }
+  
+ javascript:location.reload(true);
+} 
+
+    </script>
+
+ <div class="all-btn">
+   
+  <button class="button" onclick="numCheck1()">
+    1</button>
+  <button class="button" onclick="numCheck2()">
+    2</button>
+  <button class="button" onclick="numCheck3()">
+    3</button>
+    
+  <br></br>
+  
+  <button class="button" onclick="numCheck4()">
+    4</button>
+  <button class="button" onclick="numCheck5()">
+    5</button>
+  <button class="button" onclick="numCheck6()">
+    6</button>
+    
+  <br></br>
+  
+  <button class="button" onclick="numCheck7()">
+    7</button>
+  <button class="button" onclick="numCheck8()">
+    8</button> 
+  <button class="button" onclick="numCheck9()">
+    9</button>
+  <br></br>
+  <button onclick="numCheck10()"
+  class="btn-10 button">
+    10</button>  
+ </div> 
+  </div>
+<style>
+</body>
+</html>
